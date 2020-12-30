@@ -1,8 +1,8 @@
 import Image from "next/image"
 
-export default function Card(props) {
+export default function Upper(props) {
   return (
-    <div style={{height: "calc(100vh/6)", width: "50%", minWidth: "350px", maxWidth: "500px"}}
+    <div style={{height: `calc(100vh/${props.numberCardPage+2})`, width: "90vw", maxWidth: "calc(400px+10vw)"}}
       className="mx-auto"
     >
       <div style={{gridTemplateColumns: "80px auto 80px"}}
@@ -43,12 +43,12 @@ export default function Card(props) {
             <h1 style={{fontSize: "40px"}}>C</h1>
           </div>
           {/* -settings- */}
-          <div className="mt-auto">
+          <div onClick={props.setOpen(!props.open)} className="mt-auto">
             <h1>. . .</h1>
           </div>
         </div>
       </div>
-      <div style={{transform: "translate(0,-100%)", height: `calc(100%*${props.per / 100})`}}
+      <div style={{transform: "translate(0,-100%)", height: `calc(100%*${props.ReadPer / 100})`}}
         className="relative bg-green-400 opacity-20 rounded-t-2xl rounded-bl-2xl"
       ></div>
     </div>
