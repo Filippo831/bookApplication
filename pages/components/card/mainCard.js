@@ -10,7 +10,6 @@ export default function MainCard(props) {
   return (
     <div>
       <Upper ReadPer={props.per} open={open} setOpen={setOpen} numberCardPage={props.numberCardPage}></Upper>
-      <Lower open={open} setOpen={setOpen}></Lower>
     </div>
   )
 }
