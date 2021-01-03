@@ -43,7 +43,7 @@ export default function Upper(props) {
             <h1 style={{fontSize: "40px"}}>C</h1>
           </div>
           {/* -settings- */}
-          <div onClick={props.setOpen(!props.open)} className="mt-auto">
+          <div  className="mt-auto">
             <h1>. . .</h1>
           </div>
         </div>
