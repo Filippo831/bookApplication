@@ -5,10 +5,10 @@ import NewBook from './components/modal/modal';
 import Navbar from './components/navbar/navbar';
 import {motion,AnimatePresence} from "framer-motion"
 
-const numberCardPage = 3;
+const numberCardPage = 6;
 
 export default function Home() {
-  const [modalOpen, setModalOpen] = useState(true)
+  const [modalOpen, setModalOpen] = useState(false)
   let temp = [];
   for (let a = 0; a < numberCardPage; a++) temp.push([0])
   const toggleModalOpen = () => {
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* NAVBAR */}
-        <div className="absolute w-full h-20 bg-yellow-800"
+        <div className="absolute z-30 w-full h-16 bg-yellow-800"
           style={{bottom: "0"}}
         >
           <Navbar toggleModalOpen={toggleModalOpen}></Navbar>
