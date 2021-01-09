@@ -1,7 +1,25 @@
+CARTE
 [x] set a variable of number of cards in a view
 [x] fix card dimentions
 [] forse è meglio tirare via ste cose sopra
-/*[] creare la parte sotto apribile (devi riuscire a passare lo State)*/
+
+NAVBAR
+[x] creare la parte sotto apribile (devi riuscire a passare lo State)
 [x] bottom navbar (lista, nuovo libro, utente)
+
+SELEZIONE IMMAGINI
 [] fare account per avere le api di microsoft images
 [] aggiungere la selezione delle immagini
+
+MODAL
+[] aggiustare grafica
+[] mettere l'annulla e il salva
+[] collegare al server
+
+COLORI
+[] fare il context con i colori
+[] cambia tema in base al tema predefinito dell'utente
+
+ANIMAZIONI
+[] animazioni pressione tasti su navbar
+[] se si puo usa gli animatepresence per le transizioni tra pagine

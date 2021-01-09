@@ -6,9 +6,11 @@ import User from "./parts/user";
 export default function Navbar(props) {
   return (
     <div className="h-full grid grid-cols-3">
-      <div>
-        <List></List>
-      </div>
+      <Link href="/list">
+        <div>
+          <List></List>
+        </div>
+      </Link>
       <div onClick={props.toggleModalOpen}>
         <New></New>
       </div>
