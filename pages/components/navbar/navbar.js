@@ -5,7 +5,7 @@ import User from "./parts/user";
 
 export default function Navbar(props) {
   return (
-    <div className="h-full grid grid-cols-3">
+    <div className="h-16 grid grid-cols-3">
       <Link href="/list">
         <div>
           <List></List>

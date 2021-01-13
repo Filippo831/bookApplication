@@ -1,5 +1,6 @@
 import {motion} from "framer-motion"
 import Buttons from "./parts/buttons";
+import Image from "./parts/image";
 import Inputs from "./parts/inputs";
 
 export default function NewBook(){
@@ -12,6 +13,7 @@ export default function NewBook(){
     >
       <Inputs></Inputs>
       <Buttons></Buttons>
+      <Image></Image>
     </motion.div>
   )
 }
