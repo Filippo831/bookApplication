@@ -1,15 +1,20 @@
 CARTE
-[x] set a variable of number of cards in a view
-[x] fix card dimentions
-[] forse è meglio tirare via ste cose sopra
+/*[x] set a variable of number of cards in a view*/
+/*[x] fix card dimentions*/
+[x] forse è meglio tirare via ste cose sopra
+[x] sistema percentuale lettura
 
 NAVBAR
 [x] creare la parte sotto apribile (devi riuscire a passare lo State)
 [x] bottom navbar (lista, nuovo libro, utente)
+[] sistemare il punto di ancoraggio
 
 SELEZIONE IMMAGINI
-[] fare account per avere le api di microsoft images
+[x] fare account per avere le api di microsoft images
 [] aggiungere la selezione delle immagini
+
+LAYOUT
+[x] sistemare barra sopra bianca
 
 MODAL
 [] aggiustare grafica

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Upper(props) {
   return (
-    <div style={{height: `calc(100vh/${props.numberCardPage+2})`, width: "90vw", maxWidth: "calc(400px+10vw)"}}
+    <div style={{height: `5,5em`, width: "90vw", maxWidth: "calc(400px+10vw)"}}
       className="mx-auto"
     >
       <div style={{gridTemplateColumns: "80px auto 80px"}}
@@ -48,6 +48,8 @@ export default function Upper(props) {
           </div>
         </div>
       </div>
+
+        {/* -READ PERCENT- */}
       <div style={{transform: "translate(0,-100%)", height: `calc(100%*${props.ReadPer / 100})`}}
         className="relative bg-green-400 opacity-20 rounded-t-2xl rounded-bl-2xl"
       ></div>

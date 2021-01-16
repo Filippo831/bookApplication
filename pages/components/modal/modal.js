@@ -3,7 +3,7 @@ import Buttons from "./parts/buttons";
 import Image from "./parts/image";
 import Inputs from "./parts/inputs";
 
-export default function NewBook(){
+export default function NewBook(props){
   return (
     <motion.div className="absolute z-50 flex flex-col w-4/5 m-6 m-auto bg-gray-600 rounded-3xl h-4/5"
       style={{top:"50vh",left:"50vw", transform:"translate(-50%,-50%)", maxWidth:"600px", maxHeight:"140vw"}}
@@ -11,9 +11,9 @@ export default function NewBook(){
       animate={{opacity:1}}
       exit={{opacity:0}}
     >
-      <Inputs></Inputs>
-      <Buttons></Buttons>
       <Image></Image>
+      <Inputs></Inputs>
+      <Buttons toggleModalOpen={props.toggleModalOpen}></Buttons>
     </motion.div>
   )
 }

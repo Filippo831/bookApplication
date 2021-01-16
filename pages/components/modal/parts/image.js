@@ -19,6 +19,6 @@ export default function Image(props) {
     //imagesArray = response.value;
   })
   return(
-    <div>images</div>
+    <div></div>
   )
 }
