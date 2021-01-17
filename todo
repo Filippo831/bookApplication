@@ -25,6 +25,13 @@ COLORI
 [] fare il context con i colori
 [] cambia tema in base al tema predefinito dell'utente
 
+DATI
+[] prendere l'input del form
+[x] fare un context con i dati del localstorage
+[x] leggere i dati da localstorage
+[] scrivere i dati da localstorage
+[] usare localstorage per metterci i dati
+
 ANIMAZIONI
 [] animazioni pressione tasti su navbar
 [] se si puo usa gli animatepresence per le transizioni tra pagine

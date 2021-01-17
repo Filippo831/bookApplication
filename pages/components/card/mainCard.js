@@ -5,7 +5,7 @@ import {useState} from "react";
 export default function MainCard(props) {
   return (
     <div className="h-full">
-      <Upper ReadPer={props.per}></Upper>
+      <Upper bookData={props.bookData}></Upper>
     </div>
   )
 }

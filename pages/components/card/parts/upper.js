@@ -21,7 +21,7 @@ export default function Upper(props) {
         >
           {/* -title- */}
           <div>
-            <h1 style={{fontSize: "20px", letterSpacing: "8px"}}>TITLE</h1>
+            <h1 style={{fontSize: "20px", letterSpacing: "8px"}}>{props.bookData.name}</h1>
             <div style={{height: "2px", width: "80px", content: "none", bottom: "2px"}}
               className="relative bg-red-600">
             </div>
