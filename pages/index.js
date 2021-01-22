@@ -24,8 +24,8 @@ export default function Home() {
       >
 
         {/* LIBRI */}
-        <div style={{gridGap:"30px"}}
-          className="pt-5 pb-10 grid"
+        <div 
+          className="pt-5 pb-10 grid gap-10"
           style={{minHeight:"100vh"}}
         >
           {bookData.map((book, index) => {
@@ -42,8 +42,8 @@ export default function Home() {
       {/* MODAL */}
       <AnimatePresence>
         {modalOpen && (
-          <div>
-            <NewBook toggleModalOpen={toggleModalOpen}></NewBook>
+          <div className="fixed top-0 z-30 w-screen h-screen">
+            <NewBook  toggleModalOpen={toggleModalOpen}></NewBook>
           </div>
         )}
       </AnimatePresence>

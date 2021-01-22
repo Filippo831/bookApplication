@@ -3,11 +3,12 @@ CARTE
 /*[x] fix card dimentions*/
 [x] forse è meglio tirare via ste cose sopra
 [x] sistema percentuale lettura
+[] sistema gap tra carta a carta
 
 NAVBAR
 [x] creare la parte sotto apribile (devi riuscire a passare lo State)
 [x] bottom navbar (lista, nuovo libro, utente)
-[] sistemare il punto di ancoraggio
+[x] sistemare il punto di ancoraggio
 
 SELEZIONE IMMAGINI
 [x] fare account per avere le api di microsoft images
@@ -17,19 +18,19 @@ LAYOUT
 [x] sistemare barra sopra bianca
 
 MODAL
-[] aggiustare grafica
-[] mettere l'annulla e il salva
-[] collegare al server
+[x] aggiustare grafica
+[x] mettere l'annulla e il salva
+[] collegare al localstorage 
 
 COLORI
 [] fare il context con i colori
 [] cambia tema in base al tema predefinito dell'utente
 
 DATI
-[] prendere l'input del form
+[x] prendere l'input del form
 [x] fare un context con i dati del localstorage
 [x] leggere i dati da localstorage
-[] scrivere i dati da localstorage
+[] scrivere i dati su localstorage
 [] usare localstorage per metterci i dati
 
 ANIMAZIONI
