@@ -12,6 +12,8 @@ NAVBAR
 
 SELEZIONE IMMAGINI
 [x] fare account per avere le api di microsoft images
+[] sistemare al ridimensionamento i dati della grandezza e delle coordinate
+[] sistemare che al cambiamento di image si riposiziona sotto image
 [] aggiungere la selezione delle immagini
 
 LAYOUT
@@ -36,3 +38,4 @@ DATI
 ANIMAZIONI
 [] animazioni pressione tasti su navbar
 [] se si puo usa gli animatepresence per le transizioni tra pagine
+

@@ -1,6 +1,7 @@
 import {useEffect} from "react"
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import {motion} from "framer-motion"
+import ImageButtons from "./image/imageButtons";
+import Colors from "./image/colors";
 
 export default function Image(props) {
   useEffect(() => {
@@ -27,18 +28,9 @@ export default function Image(props) {
       exit={{opacity:0}}
     >
       {/* UPPER */}
-      <div className="flex justify-between pt-6 pl-6 pr-12">
-        <div>
-          <ArrowBackIosIcon onClick={props.toggleImageOpen}
-          ></ArrowBackIosIcon>
-        </div>
-        <div>
-          <h1>Color</h1>
-        </div>
-        <div>
-          <h1>Image</h1>
-        </div>
-      </div>
+      <ImageButtons toggleImageOpen={props.toggleImageOpen}></ImageButtons>
+      <Colors></Colors>
+
     </motion.div>
   )
 }

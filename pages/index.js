@@ -42,7 +42,7 @@ export default function Home() {
       {/* MODAL */}
       <AnimatePresence>
         {modalOpen && (
-          <div className="fixed top-0 z-30 w-screen h-screen">
+          <div className="fixed top-0 z-30 w-screen h-screen" >
             <NewBook  toggleModalOpen={toggleModalOpen}></NewBook>
           </div>
         )}
