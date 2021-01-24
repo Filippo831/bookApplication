@@ -3,7 +3,7 @@ CARTE
 /*[x] fix card dimentions*/
 [x] forse è meglio tirare via ste cose sopra
 [x] sistema percentuale lettura
-[] sistema gap tra carta a carta
+[] sistema gap tra carta a carta quando ce ne sono poche
 
 NAVBAR
 [x] creare la parte sotto apribile (devi riuscire a passare lo State)
@@ -12,6 +12,7 @@ NAVBAR
 
 SELEZIONE IMMAGINI
 [x] fare account per avere le api di microsoft images
+[] selezione colore solido
 [] sistemare al ridimensionamento i dati della grandezza e delle coordinate
 [] sistemare che al cambiamento di image si riposiziona sotto image
 [] aggiungere la selezione delle immagini

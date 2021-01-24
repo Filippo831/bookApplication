@@ -12,13 +12,14 @@ export default function ImageButtons(props) {
 
   const handleColorClick = () =>{
     setLinePosition(colorPosition)
+    props.setIsColor(true)
   }
 
   const handleImageClick = () =>{
     setLinePosition(imagePosition)
+    props.setIsColor(false)
   }
 
-    console.log(colorPosition)
   useEffect(async() => {
     await setColorPosition(colorRef.current.getBoundingClientRect())
     await setImagePosition(imageRef.current.getBoundingClientRect())
