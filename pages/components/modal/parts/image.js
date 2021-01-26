@@ -1,4 +1,4 @@
-import {useState,useEffect} from "react"
+import {useState, useEffect} from "react"
 import {motion, AnimatePresence} from "framer-motion"
 import ImageButtons from "./image/imageButtons";
 import Colors from "./image/colors";
@@ -23,18 +23,18 @@ export default function Image(props) {
     //});
     //imagesArray = response.value;
   })
-  const [isColor,setIsColor] = useState(true)
+  const [isColor, setIsColor] = useState(true)
   return (
     <motion.div className="absolute top-0 z-40 w-screen h-screen bg-pink-600"
-      initial={{opacity:0}}
-      animate={{opacity:1}}
-      exit={{opacity:0}}
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
     >
       {/* UPPER */}
       <ImageButtons toggleImageOpen={props.toggleImageOpen} setIsColor={setIsColor}></ImageButtons>
       <AnimatePresence>
         {isColor && (
-<Colors></Colors>
+          <Colors></Colors>
         )}
         {!isColor && (
           <Images></Images>
