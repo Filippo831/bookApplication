@@ -16,7 +16,7 @@ export default function NewBook(props) {
   }
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full" style={{minHeight:"100vh"}}>
       <AnimatePresence>
         {imageOpen &&
           (<Image toggleImageOpen={toggleImageOpen} setImage={setImage}></Image>)
