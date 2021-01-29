@@ -1,8 +1,8 @@
 import {useState, useEffect} from "react"
 import {motion, AnimatePresence} from "framer-motion"
-import ImageButtons from "./image/imageButtons";
-import Colors from "./image/colors";
-import Images from "./image/images";
+import ImageButtons from "./components/image/imageButtons";
+import Colors from "./components/image/colors";
+import Images from "./components/image/images";
 
 
 export default function Image(props) {

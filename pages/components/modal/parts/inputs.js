@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {TextField} from "@material-ui/core"
 import {PermMedia} from "@material-ui/icons"
 
@@ -12,7 +13,9 @@ export default function Inputs(props) {
         >
           <div className="flex justify-around">
             <div className="p-2 bg-blue-300 rounded-full">
+              <Link href="/image">
               <PermMedia></PermMedia>
+</Link>
             </div>
           </div>
         </div>

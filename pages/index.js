@@ -9,6 +9,8 @@ import {BookDataContext} from './context/booksData';
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false)
+  const [imageOpen, setImageOpen] = useState(false);
+  const [image, setImage] = useState()
   const toggleModalOpen = () => {
     setModalOpen(!modalOpen)
   }
@@ -43,7 +45,7 @@ export default function Home() {
       <AnimatePresence>
         {modalOpen && (
           <div className="fixed top-0 z-30 w-screen h-screen" >
-            <NewBook  toggleModalOpen={toggleModalOpen}></NewBook>
+            <NewBook toggleModalOpen={toggleModalOpen}></NewBook>
           </div>
         )}
       </AnimatePresence>
