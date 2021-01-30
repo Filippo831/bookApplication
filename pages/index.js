@@ -5,17 +5,13 @@ import NewBook from './components/modal/modal';
 import Navbar from './components/navbar/navbar';
 import {motion, AnimatePresence} from "framer-motion"
 import {BookDataContext} from './context/booksData';
+import {SetModalOpenContext} from "./context/inputData"
 
 
 export default function Home() {
-  const [modalOpen, setModalOpen] = useState(false)
-  const [imageOpen, setImageOpen] = useState(false);
-  const [image, setImage] = useState()
-  const toggleModalOpen = () => {
-    setModalOpen(!modalOpen)
-  }
   //get book list from context 
   let bookData = useContext(BookDataContext) 
+  let {toggleModalOpen, modalOpen} = useContext(SetModalOpenContext)
 
   return (
     <div>

@@ -4,9 +4,6 @@ import Buttons from "./parts/buttons";
 import Inputs from "./parts/inputs";
 
 export default function NewBook(props) {
-  const [title, setTitle] = useState()
-  const [author, setAuthor] = useState()
-  const [pages, setPages] = useState();
 
 
   return (
@@ -20,10 +17,7 @@ export default function NewBook(props) {
           animate={{opacity: 1}}
           exit={{opacity: 0}}
         >
-          <Inputs title={title} setTitle={setTitle}
-            author={author} setAuthor={setAuthor}
-            pages={pages} setPages={setPages}
-          > </Inputs>
+          <Inputs></Inputs>
           <Buttons toggleModalOpen={props.toggleModalOpen}></Buttons>
         </motion.div>
       </div>

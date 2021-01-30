@@ -1,8 +1,13 @@
 import Link from "next/link"
 import {TextField} from "@material-ui/core"
 import {PermMedia} from "@material-ui/icons"
+import {SetInputDataContext, InputDataContext} from "../../../context/inputData"
+import {useContext} from "react"
 
 export default function Inputs(props) {
+  const {image, title, author, pages} = useContext(InputDataContext)
+  const {setImage, setTitle, setAuthor, setPages} = useContext(SetInputDataContext)
+
   return (
     <div className="flex flex-col justify-between w-4/5 mt-6 ml-6 mr-6 h-1/2">
       {/* --- INPUT IMMAGINE ---*/}
@@ -14,17 +19,17 @@ export default function Inputs(props) {
           <div className="flex justify-around">
             <div className="p-2 bg-blue-300 rounded-full">
               <Link href="/image">
-              <PermMedia></PermMedia>
-</Link>
+                <PermMedia></PermMedia>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
       {/* --- TITLE, AUTH, PAGE INPUTS ---*/}
-      <TextField value={props.title} onChange={e => props.setTitle(e.target.value)} label="titolo"></TextField>
-      <TextField value={props.author} onChange={e => props.setAuthor(e.target.value)} label="autore"></TextField>
-      <TextField value={props.pages} onChange={e => props.setPages(e.target.value)} label="pagine" type="number" className="appearance-none"></TextField>
+      <TextField value={title} onChange={e => setTitle(e.target.value)} label="titolo"></TextField>
+      <TextField value={author} onChange={e => setAuthor(e.target.value)} label="autore"></TextField>
+      <TextField value={pages} onChange={e => setPages(e.target.value)} label="pagine" type="number" className="appearance-none"></TextField>
     </div>
   )
 }

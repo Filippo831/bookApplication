@@ -29,11 +29,8 @@ export default function Image(props) {
   }, [])
   console.log(imagesArray)
   return (
-    <motion.div className="absolute top-0 z-40 w-screen bg-pink-600"
+    <motion.div className="w-screen"
       style={{minHeight:"100vh"}}
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
     >
       {/* UPPER */}
       <ImageButtons toggleImageOpen={props.toggleImageOpen} setIsColor={setIsColor}></ImageButtons>
@@ -44,7 +41,6 @@ export default function Image(props) {
         {!isColor && (
           <Images imagesArray={imagesArray}></Images>
         )}
-
       </AnimatePresence>
 
     </motion.div>

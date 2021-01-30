@@ -5,9 +5,9 @@ export default function Colors() {
   const [selected, setSelected] = useState()
   return(
     <motion.div className="justify-around px-6 pt-10 grid grid-cols-3 gap-4"
-      initial={{x:"-100%"}}
-      animate={{x:0}}
-      exit={{x:"100%"}}
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{delay:0.2}}
     >
       {colors.map((color, index)=>{
         return (

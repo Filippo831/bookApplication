@@ -41,7 +41,7 @@ export default function ImageButtons(props) {
           </Link>
         </div>
         <div onClick={handleColorClick} ref={colorRef}>
-          <h1>Colorsdfkljsalfkj</h1>
+          <h1>Colors</h1>
         </div>
         <div>
           <h1 onClick={handleImageClick} ref={imageRef}>Image</h1>

@@ -13,11 +13,12 @@ NAVBAR
 SELEZIONE IMMAGINI
 [x] fare account per avere le api di microsoft images
 [x] selezione colore solido
+[x] sistemare che al cambiamento di image si riposiziona sotto image
+[x] trasferire il selezionamento delle imagini in un path proprio
+[] sistema animazioni
 [] sistemare al ridimensionamento i dati della grandezza e delle coordinate
 [] mettere l'handle degli input in un context con anche quello che apre o chiude il modal
-[x] sistemare che al cambiamento di image si riposiziona sotto image
 [] aggiungere la selezione delle immagini
-[] trasferire il selezionamento delle imagini in un path proprio
 
 LAYOUT
 [x] sistemare barra sopra bianca
