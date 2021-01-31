@@ -3,6 +3,7 @@ import {motion, AnimatePresence} from "framer-motion"
 import ImageButtons from "./components/image/imageButtons";
 import Colors from "./components/image/colors";
 import Images from "./components/image/images";
+import ImageUnderButtons from "./components/image/imageUnderButtons";
 
 
 export default function Image(props) {
@@ -28,6 +29,7 @@ export default function Image(props) {
     setImagesArray(JSON.parse(localStorage.getItem("images")))
   }, [])
   console.log(imagesArray)
+
   return (
     <motion.div className="w-screen"
       style={{minHeight:"100vh"}}
@@ -42,6 +44,7 @@ export default function Image(props) {
           <Images imagesArray={imagesArray}></Images>
         )}
       </AnimatePresence>
+      <ImageUnderButtons></ImageUnderButtons>
 
     </motion.div>
   )

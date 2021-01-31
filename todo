@@ -36,7 +36,8 @@ DATI
 [x] prendere l'input del form
 [x] fare un context con i dati del localstorage
 [x] leggere i dati da localstorage
-[] scrivere i dati su localstorage
+[x] scrivere i dati su localstorage
+[] refreshare main page quando si aggiunge un libro
 [] usare localstorage per metterci i dati
 
 ANIMAZIONI

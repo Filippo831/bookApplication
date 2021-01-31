@@ -1,15 +1,17 @@
 import {motion} from "framer-motion"
 import {TextField} from "@material-ui/core"
 import Search from '@material-ui/icons/Search'
-import {useState} from "react"
+import {useState, useContext} from "react"
+import {InputDataContext, SetInputDataContext} from "../../context/inputData"
 
 export default function Images(props) {
   const [imageSearch, setImageSearch] = useState("")
   const [selected, setSelected] = useState()
+  const {image, title, author, pages, isImage, color} = useContext(InputDataContext)
+  const {setImage, setTitle, setAuthor, setPages, setIsImage, setColor} = useContext(SetInputDataContext)
 
   return (
-    <div
-    >
+    <div >
       {/* --- INPUT --- */}
       <div className="w-4/5 pt-6 pb-4 mx-auto border-b border-red-900">
         <div className="flex justify-around mx-auto align-middle">
@@ -28,9 +30,14 @@ export default function Images(props) {
           return (
             <div key={index}
               className="relative w-5/6 h-32 top-1/2 left-1/2 rounded-3xl"
-              style={{transform: "translate(-50%,-50%)", backgroundSize: "cover", backgroundPosition: "center", backgroundImage: `url(${image.contentUrl})`, boxShadow:index==selected?"0 0 0 3px blue":""}}
-              onClick={() => setSelected(index)}
-
+              style={{
+                transform: "translate(-50%,-50%)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundImage: `url(${image.contentUrl})`,
+                boxShadow: index == selected ? "0 0 0 3px blue" : ""
+              }}
+              onClick={() => {setSelected(index), setIsImage(true), setImage(image.contentUrl)}}
             ></div>
           )
         })}

@@ -5,8 +5,8 @@ import {SetInputDataContext, InputDataContext} from "../../../context/inputData"
 import {useContext} from "react"
 
 export default function Inputs(props) {
-  const {image, title, author, pages} = useContext(InputDataContext)
-  const {setImage, setTitle, setAuthor, setPages} = useContext(SetInputDataContext)
+  const {image, title, author, pages, isImage, color} = useContext(InputDataContext)
+  const {setImage, setTitle, setAuthor, setPages, setIsImage, setColor} = useContext(SetInputDataContext)
 
   return (
     <div className="flex flex-col justify-between w-4/5 mt-6 ml-6 mr-6 h-1/2">
