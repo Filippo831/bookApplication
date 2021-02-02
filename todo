@@ -15,9 +15,9 @@ SELEZIONE IMMAGINI
 [x] selezione colore solido
 [x] sistemare che al cambiamento di image si riposiziona sotto image
 [x] trasferire il selezionamento delle imagini in un path proprio
-[] sistema animazioni
+[x] sistema animazioni
+[x] mettere l'handle degli input in un context con anche quello che apre o chiude il modal
 [] sistemare al ridimensionamento i dati della grandezza e delle coordinate
-[] mettere l'handle degli input in un context con anche quello che apre o chiude il modal
 [] aggiungere la selezione delle immagini
 
 LAYOUT
@@ -26,7 +26,7 @@ LAYOUT
 MODAL
 [x] aggiustare grafica
 [x] mettere l'annulla e il salva
-[] collegare al localstorage 
+[x] collegare al localstorage 
 
 COLORI
 [] fare il context con i colori

@@ -14,7 +14,11 @@ export default function Home() {
   let {toggleModalOpen, modalOpen} = useContext(SetModalOpenContext)
 
   return (
-    <div>
+    <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0}}
+    >
       {/* --- blur when modal open ---*/}
       <motion.div
         animate={modalOpen ? {filter: "blur(5px)"} : {filter: "blur(0)"}}
@@ -26,7 +30,7 @@ export default function Home() {
           className="pt-5 pb-10 grid gap-10"
           style={{minHeight:"100vh"}}
         >
-          {bookData.map((book, index) => {
+        {bookData.map((book, index) => {
             return (<MainCard bookData={book} key={index} className={index}></MainCard>)
           })}
         </div>
@@ -45,6 +49,6 @@ export default function Home() {
           </div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   )
 }
