@@ -6,6 +6,7 @@ export default function Colors() {
   const [selected, setSelected] = useState()
   const {image, title, author, pages, isImage, color} = useContext(InputDataContext)
   const {setImage, setTitle, setAuthor, setPages, setIsImage, setColor} = useContext(SetInputDataContext)
+
   return (
     <motion.div className="justify-around px-6 pt-10 grid grid-cols-3 gap-4"
       initial={{opacity: 0}}
