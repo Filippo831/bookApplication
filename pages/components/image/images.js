@@ -16,7 +16,7 @@ export default function Images(props) {
       <div className="w-4/5 pt-6 pb-4 mx-auto border-b border-red-900">
         <div className="flex justify-around mx-auto align-middle">
           <TextField label="cerca copertina" onChange={e => setImageSearch(e.target.value)} value={imageSearch}></TextField>
-          <Search className="mt-auto" onClick={()=>props.searchImages(imageSearch)}></Search>
+          <Search className="mt-auto" onClick={()=>props.searchImagesFunction(imageSearch)}></Search>
         </div>
       </div>
 

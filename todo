@@ -1,5 +1,7 @@
 IMPORTANTE
-[] sistema il fatto che la funzione per cercare le immagini non venga riconosciuta come funzione
+[x] sistema il fatto che la funzione per cercare le immagini non venga riconosciuta come funzione
+[] non funziona la ricerca delle immagini perche non riesce a trasportare la funzione nei components e non va nulla
+
 
 CARTE
 /*[x] set a variable of number of cards in a view*/
