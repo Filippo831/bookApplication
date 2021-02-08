@@ -17,7 +17,7 @@ export default function NewBook(props) {
           exit={{opacity: 0}}
         >
           <Inputs></Inputs>
-          <Buttons toggleModalOpen={props.toggleModalOpen}></Buttons>
+          <Buttons ></Buttons>
         </motion.div>
       </div>
     </div>

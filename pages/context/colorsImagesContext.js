@@ -3,13 +3,13 @@ import {createContext, useState, useEffect} from "react"
 const colors = {}
 
 
-const ImagesArray = createContext([], () => {})
+const ImagesArray = createContext([] )
 const SearchImagesContext = createContext(() => {})
 const ColorsContext = createContext(colors)
 
 export default function ColorsProvider(props) {
   const [imagesArray, setImagesArray] = useState([])
-  const [searchedString, setSearchedString] = useState("")
+  const [searchedString, setSearchedString] = useState()
 
   useEffect(() => {
     //--- GET API DATA --- 
@@ -32,7 +32,7 @@ export default function ColorsProvider(props) {
   }, [searchedString])
 
   return (
-    <ImagesArray.Provider value={[]}>
+    <ImagesArray.Provider value={imagesArray}>
       <ColorsContext.Provider value={[]}>
         <SearchImagesContext.Provider value={setSearchedString}>
           {props.children}
@@ -40,6 +40,5 @@ export default function ColorsProvider(props) {
       </ColorsContext.Provider>
     </ImagesArray.Provider>
   )
-
 }
 export {ColorsContext, ImagesArray, SearchImagesContext}

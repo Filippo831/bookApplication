@@ -37,7 +37,7 @@ export default function Home() {
 
         {/* NAVBAR */}
         <div className="sticky bottom-0 z-50 w-full h-16" >
-          <Navbar toggleModalOpen={toggleModalOpen}></Navbar>
+          <Navbar></Navbar>
         </div>
       </motion.div>
 
