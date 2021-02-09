@@ -1,17 +1,17 @@
 import Head from 'next/head'
-import {useContext, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import MainCard from './components/card/mainCard'
 import NewBook from './components/modal/modal';
 import Navbar from './components/navbar/navbar';
 import {motion, AnimatePresence} from "framer-motion"
 import {BookDataContext} from './context/booksData';
-import {SetModalOpenContext} from "./context/inputData"
+import {ModalValueContext} from "./context/inputData"
 
 
 export default function Home() {
   //get book list from context 
-  let bookData = useContext(BookDataContext) 
-  let {toggleModalOpen, modalOpen} = useContext(SetModalOpenContext)
+  const bookData = useContext(BookDataContext) 
+  const modalOpen = useContext(ModalValueContext)
 
   return (
     <motion.div
@@ -45,7 +45,7 @@ export default function Home() {
       <AnimatePresence>
         {modalOpen && (
           <div className="fixed top-0 z-30 w-screen h-screen" >
-            <NewBook toggleModalOpen={toggleModalOpen}></NewBook>
+            <NewBook></NewBook>
           </div>
         )}
       </AnimatePresence>

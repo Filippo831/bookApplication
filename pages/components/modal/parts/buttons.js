@@ -1,11 +1,13 @@
 import Button from "@material-ui/core/Button"
 import {useContext} from "react"
 import {InputDataContext} from '../../../context/inputData'
+import {SetModalOpenContext} from "../../../context/inputData"
 
 let books = [];
 
 export default function Buttons(props) {
   const inputData = useContext(InputDataContext)
+  const toggleModalOpen = useContext(SetModalOpenContext)
   const handleInputData = async () => {
     const newBook = {
       description: {
@@ -33,7 +35,7 @@ export default function Buttons(props) {
   }
   return (
     <div className="mt-auto mb-4 ml-auto mr-8">
-      <Button onClick={props.toggleModalOpen}>annulla</Button>
+      <Button onClick={toggleModalOpen}>annulla</Button>
       <Button onClick={handleInputData} variant="contained" color="primary">salva</Button>
     </div>
   )

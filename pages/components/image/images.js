@@ -33,6 +33,7 @@ export default function Images(props) {
               style={{
                 transform: "translate(-50%,-50%)",
                 backgroundSize: "cover",
+backgroundRepeat:"no-repeat",
                 backgroundPosition: "center",
                 backgroundImage: `url(${image.contentUrl})`,
                 boxShadow: index == selected ? "0 0 0 3px blue" : ""

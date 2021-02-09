@@ -1,6 +1,7 @@
 import {createContext, useState} from "react";
 
-const SetModalOpenContext = createContext({})
+const SetModalOpenContext = createContext(() => {})
+const ModalValueContext = createContext()
 const SetInputDataContext = createContext({})
 const InputDataContext = createContext({})
 export default function inputDataProvider(props) {
@@ -20,12 +21,14 @@ export default function inputDataProvider(props) {
   }
   return (
     <InputDataContext.Provider value={{image, title, author, pages, isImage, color}}>
-      <SetInputDataContext.Provider value={{setImage, setTitle, setAuthor, setPages, setIsImage, setColor}}>
-        <SetModalOpenContext.Provider value={{toggleModalOpen, modalOpen}}>
-          {props.children}
-        </SetModalOpenContext.Provider>
-      </SetInputDataContext.Provider>
+      <ModalValueContext.Provider value={modalOpen}>
+        <SetInputDataContext.Provider value={{setImage, setTitle, setAuthor, setPages, setIsImage, setColor}}>
+          <SetModalOpenContext.Provider value={toggleModalOpen}>
+            {props.children}
+          </SetModalOpenContext.Provider>
+        </SetInputDataContext.Provider>
+      </ModalValueContext.Provider>
     </InputDataContext.Provider>
   )
 }
-export {SetModalOpenContext, SetInputDataContext, InputDataContext}
+export {ModalValueContext,SetModalOpenContext, SetInputDataContext, InputDataContext}
