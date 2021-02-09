@@ -11,7 +11,7 @@ export default function Buttons(props) {
   const handleInputData = async () => {
     const newBook = {
       description: {
-        name: inputData.name,
+        name: inputData.title,
         author: inputData.author
       },
       data: {
@@ -30,7 +30,7 @@ export default function Buttons(props) {
       }
     }
     books = await JSON.parse(localStorage.getItem("book"))
-    books = {...books, newBook}
+    books = [...books, newBook]
     localStorage.setItem("book", JSON.stringify(books))
   }
   return (

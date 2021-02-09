@@ -31,16 +31,16 @@ export default function Inputs(props) {
       <div className="w-16 h-20 bg-red-100 rounded-xl"
         style={{
           background: displayImage,
-          backgroundSize: isImage == true ? "cover" : "",
-          backgroundPosition: isImage == true ? "center" : "",
-          backgroundRepeat: isImage == true ? "no-repeat" : ""
+          backgroundSize:"cover",
+          backgroundPosition:"center",
+          backgroundRepeat:"no-repeat"
         }}
       >
         <div className="relative top-1/2 left-1/2"
           style={{transform: "translate(-50%,-50%)"}}
         >
           <div className="flex justify-around">
-            <div className="p-2 bg-blue-300 rounded-full">
+            <div className="p-2 bg-blue-300 rounded-full shadow-xl">
               <Link href="/image" style="z-40">
                 <PermMedia></PermMedia>
               </Link>

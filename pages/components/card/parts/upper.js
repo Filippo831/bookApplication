@@ -21,14 +21,14 @@ export default function Upper(props) {
         >
           {/* -title- */}
           <div>
-            <h1 style={{fontSize: "20px", letterSpacing: "8px"}}>{props.bookData.name}</h1>
+            <h1 style={{fontSize: "20px", letterSpacing: "8px"}}>{props.bookData.description.name}</h1>
             <div style={{height: "2px", width: "80px", content: "none", bottom: "2px"}}
               className="relative bg-red-600">
             </div>
           </div>
           {/* -auth- */}
           <div className="relative" style={{bottom: "2px"}}>
-            <h2>author</h2>
+            <h2>{props.bookData.description.author}</h2>
           </div>
           {/* -read pages- */}
           <div className="mt-auto">
