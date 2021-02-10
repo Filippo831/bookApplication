@@ -10,7 +10,12 @@ export default function Upper(props) {
 
         {/* -IMAGE- */}
         <div className="z-10 bg-black rounded-l-2xl">
-          <div style={{top: "50%", transform: "translate(0%, -50%)", backgroundSize: "100%, 100%", background: "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Freadingchallengers.files.wordpress.com%2F2012%2F07%2F1984.jpg&f=1&nofb=1)"}}
+          <div style={{
+            top: "50%",
+            transform: "translate(0%, -50%)",
+            backgroundSize: "100%, 100%",
+            background: props.bookData.image.isImage ? `url(${props.bookData.image.imageLink})` : props.bookData.image.color
+          }}
             className="relative w-5/6 m-auto bg-white h-5/6 rounded-xl">
           </div>
         </div>
@@ -43,13 +48,13 @@ export default function Upper(props) {
             <h1 style={{fontSize: "40px"}}>C</h1>
           </div>
           {/* -settings- */}
-          <div  className="mt-auto">
+          <div className="mt-auto">
             <h1>. . .</h1>
           </div>
         </div>
       </div>
 
-        {/* -READ PERCENT- */}
+      {/* -READ PERCENT- */}
       <div style={{transform: "translate(0,-100%)", height: `calc(100%*${props.ReadPer / 100})`}}
         className="relative bg-green-400 opacity-20 rounded-t-2xl rounded-bl-2xl"
       ></div>

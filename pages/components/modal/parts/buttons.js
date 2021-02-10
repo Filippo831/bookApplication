@@ -16,20 +16,25 @@ export default function Buttons(props) {
       },
       data: {
         pages: {
-          pagesNumber: inputData.pages
+          pagesNumber: inputData.pages,
+          pagesRead:0
         },
         time: {
           totalTime: 0,
           timePerPage: 0,
+        },
+        dates: {
+          added: getTime()
         }
       },
       image: {
         isImage: inputData.isImage,
-        imageLink: inputData.imageLink,
+        imageLink: inputData.image,
         color: inputData.color
       }
     }
     books = await JSON.parse(localStorage.getItem("book"))
+    console.log(books)
     books = [...books, newBook]
     localStorage.setItem("book", JSON.stringify(books))
   }

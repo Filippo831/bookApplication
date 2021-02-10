@@ -1,20 +1,23 @@
 IMPORTANTE
 [x] sistema il fatto che la funzione per cercare le immagini non venga riconosciuta come funzione
 [x] non funziona la ricerca delle immagini perche non riesce a trasportare la funzione nei components e non va nulla
-[] controlla se gli styling dinamici in modal/parts/inputs funzionano
+[x] controlla se gli styling dinamici in modal/parts/inputs funzionano (non funzionano)
 
 
 CARTE
-/*[x] set a variable of number of cards in a view*/
-/*[x] fix card dimentions*/
+[x] set a variable of number of cards in a view
+[x] fix card dimentions
 [x] forse è meglio tirare via ste cose sopra
 [x] sistema percentuale lettura
 [] sistema gap tra carta a carta quando ce ne sono poche
+[] riniserire la percentuale letta con la linea in mezzo alla carta
+[] aggiungere icone al posto della C per leggere il libro
 
 NAVBAR
 [x] creare la parte sotto apribile (devi riuscire a passare lo State)
 [x] bottom navbar (lista, nuovo libro, utente)
 [x] sistemare il punto di ancoraggio
+[] mettere delle animazioni
 
 SELEZIONE IMMAGINI
 [x] fare account per avere le api di microsoft images
@@ -23,16 +26,27 @@ SELEZIONE IMMAGINI
 [x] trasferire il selezionamento delle imagini in un path proprio
 [x] sistema animazioni
 [x] mettere l'handle degli input in un context con anche quello che apre o chiude il modal
+[x] aggiungere la selezione delle immagini
 [] sistemare al ridimensionamento i dati della grandezza e delle coordinate
-[] aggiungere la selezione delle immagini
+[] mettere il placeholder hand nel pulsante di cerca
+[] usare "enter" per avviare la ricerca
+[] vedi se riesci a mettere un'animazione di caricamento mentre carica le immagini
 
 LAYOUT
 [x] sistemare barra sopra bianca
+
+TIMER
+[] mettere l'inserimento manuale della lettura con {pagine lette, tempo letto(se non tempo moltiplicare le pagine per la media per pagina)}
+[] mettere un timer che scriva quando hai iniziato a leggere in caso si spegnesse e lo scriva in localstorage
+[] mettere di sfondo l'immagine del libro o del colore scelto
+[] aggiornare il tempo letto facendo tempo precedente + tempo letto ora
+
 
 MODAL
 [x] aggiustare grafica
 [x] mettere l'annulla e il salva
 [x] collegare al localstorage 
+[] mettere la chiusura del modal alla pressione di applica
 
 COLORI
 [] fare il context con i colori
@@ -49,4 +63,3 @@ DATI
 ANIMAZIONI
 [] animazioni pressione tasti su navbar
 [] se si puo usa gli animatepresence per le transizioni tra pagine
-
