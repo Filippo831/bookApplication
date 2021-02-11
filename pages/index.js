@@ -10,7 +10,7 @@ import {ModalValueContext} from "./context/inputData"
 
 export default function Home() {
   //get book list from context 
-  const bookData = useContext(BookDataContext) 
+  const [bookData, setBookData] = useContext(BookDataContext) 
   const modalOpen = useContext(ModalValueContext)
 
   return (

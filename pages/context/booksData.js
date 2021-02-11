@@ -1,6 +1,6 @@
 import {createContext, useContext, useEffect, useState} from "react"
 
-const BookDataContext = createContext([]);
+const BookDataContext = createContext([{},()=>{}]);
 
 export default function BookDataProvider(props) {
   const [readBooks, setReadBooks] = useState([]);
@@ -17,7 +17,7 @@ export default function BookDataProvider(props) {
 
   //return data as context 
   return (
-    <BookDataContext.Provider value={readBooks}>
+    <BookDataContext.Provider value={[readBooks, setReadBooks]}>
       {props.children}
     </BookDataContext.Provider>
   )
